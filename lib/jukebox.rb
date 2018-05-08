@@ -41,7 +41,7 @@ puts "Please enter a song name or number:"
 song_name=gets.chomp
 counter = 1
 my_songs.each do |x|
-  if song_name == x || a==counter.to_s
+  if song_name == x || song_name==counter.to_s
     puts "playing #{x}"
   else
     puts "Invalid input, please try again"
