@@ -56,5 +56,21 @@ puts "Goodbye"
 end
 
 def run(my_songs)
-
+  help
+  loop do
+    puts "Please enter a command:"
+    command = gets.chomp
+    if command == "list"
+      list(my_songs)
+    elsif command == "help"
+      help
+    elsif command == "play"
+      play(my_songs)
+    elsif command == "exit"
+      exit_jukebox
+      break
+    else
+      help
+    end
+  end
 end
