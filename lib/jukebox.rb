@@ -39,14 +39,15 @@ def play(my_songs)
   #get the file path of the song by looking it up in the my_songs hash
 puts "Please enter a song name or number:"
 song_name=gets.chomp
-if (1..9).to_a.include?(song_name.to_i)
-  puts "Playing #{my_songs[song_name.to_i -1]}"
-elsif my_songs.include?(song_name)
-  puts "Playing #{song_name}"
-else
-  puts "Invalid input, please try again"
+counter = 1
+my_songs.each do |x|
+  if song_name == x || a==counter.to_s
+    puts "playing #{x}"
+  else
+    puts "Invalid input, please try again"
+  end
+  counter +=1
 end
-
 end
 
 def exit_jukebox
