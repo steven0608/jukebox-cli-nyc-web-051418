@@ -56,21 +56,4 @@ end
 
 def run(my_songs)
 
-
-command=""
-puts "Please enter a command:"
-command=gets.chomp
-case command.downcase
-when "exit"
-  exit_jukebox
-
-when "list"
-  list(my_songs)
-when "play"
-  play(my_songs)
-when "help"
-  help
-else
-  help
-end
 end
