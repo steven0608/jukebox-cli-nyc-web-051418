@@ -63,7 +63,7 @@ command=gets.chomp
 case command.downcase
 when "exit"
   exit_jukebox
-  break
+
 when "list"
   list(my_songs)
 when "play"
